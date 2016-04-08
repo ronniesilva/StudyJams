@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Study Jams</string>
+    <string name="action_settings">Sobre</string>
+
+    <string name="string1">
+        TextView2:\n---------------\n\nEste TextView está recebendo o texto de uma variável definida na value strings.xml:\n\ntextView2.setText(getString(R.string.string1));\n\nObs: Até aqui ainda não tem código Html. A formatação é limitada.
+    </string>
+
+    <string name="string2">
+        <![CDATA[
+            <h1> TextView com HTML no strings.xml</h1></br>
+
+            <p>O TextView pode receber o texto diretamente do <i>strings.xml</i> e o melhor modo de adicioná-lo passando código HTML é usando o CDATA.</p>
+            <p>As seções CDATA fornecem uma maneira de instruir o analisador de que não existem marcações nos caracteres contidos na seção CDATA.</p>
+            <p>Quando um analisador XML encontra o "&lt;![CDATA[" inicial, ele relata o conteúdo que segue como caracteres, sem tentar interpretá-los como marcação de elemento ou de entidade.</p>
+
+            <p></p>
+        ]]>
+    </string>
+    <string name="section_format">Hello World from section: %1$d</string>
+</resources>

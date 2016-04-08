@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#titulo{
+	font-family: tahoma, arial;
+	font-size: 18px;
+    text-align: center;
+    color: #088A08;
+	border: 1px solid white;
+	background: #F2F2F2;
+    border-radius: 4px;
+}
+
+p{
+	font-family: tahoma, arial;
+	font-size: 14px;
+	text-align: justify;
+}
+
+img{
+    padding: 5px;
+	display: block;
+    margin: 0 auto;
+}
+
+.code {
+	font-family: tahoma, arial;
+	font-size: 12px;
+    border: 1px solid lightgrey;
+	padding-left: 15px;
+	padding-top:10px;
+	padding-bottom:10px;
+	background-color: #F2F2F2;
+    text-align: left;
+	margin-left: 10px;
+}
+</style>
+</head>
+<body>
+
+<img src="file:///android_res/drawable/android_logo.png"/>
+<p id="titulo">WebView</p>
+<p>Uma WebView é simplesmente uma View que exibe página web.</p>
+
+<p>Ele usa o motor de renderização WebKit para exibir páginas da web e inclui métodos para navegar para frente e para trás através de uma história, zoom in e out, realizar pesquisas de texto e muito mais.</p>
+
+<p>Esta classe pode exibir conteúdo on-line dentro de sua activity. </p>
+<div class="code">
+	WebView webView = (WebView) findViewById(R.id.webView);</br>
+	webview.loadUrl("http://www.meetup.com/pt-BR/GDG-Salvador/");</br>
+</div>
+
+<p>Também é possível carregar uma página html local.</p>
+<div class="code">
+	webview.loadUrl("http://www.meetup.com/pt-BR/GDG-Salvador/");
+</div>
+
+<p>Por padrão o uso de JavaScript é desabilitado e o erros serão ignorados, porém você pode habilitá-lo.</p>
+<div class="code">
+	webView.getSettings().setJavaScriptEnabled(true);
+</div>
+
+<p>Com o uso do WebView permitirá realizar formatação CSS.</p>
+<div class="code" >
+		&lt;style>
+			p{
+			font-family: tahoma, arial;
+			font-size: 12px;
+			text-align: justify;
+			}
+		&lt;/style>
+</div>
+
+</body>
+</html>
